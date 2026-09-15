@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>徐昊 · 作品集在线浏览 · 42 页</title>
+<meta name="description" content="徐昊作品集在线浏览：品牌设计 / 海报设计 / 标志设计 / UI设计 / 键帽设计 / 其他设计，共 42 页" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:#0f1116;color:#e8eaf0;line-height:1.6;
+  font-family:-apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;
+}
+.bar{
+  position:sticky;top:0;z-index:10;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  padding:12px 20px;
+  background:rgba(15,17,22,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,.09);
+}
+.bar h1{font-size:16px;font-weight:700;letter-spacing:.5px}
+.bar h1 em{font-style:normal;color:#8b93a7;font-size:13px;font-weight:400;margin-left:8px}
+.bar .sp{flex:1}
+.bar a,.bar button{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:8px 15px;border-radius:8px;font-size:13.5px;font-weight:600;
+  text-decoration:none;cursor:pointer;border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.05);color:#e8eaf0;
+  transition:.2s;white-space:nowrap;
+}
+.bar a:hover,.bar button:hover{background:#2f6bff;border-color:#2f6bff;color:#fff}
+.bar .primary{background:#2f6bff;border-color:#2f6bff;color:#fff}
+.bar .primary:hover{background:#1f57e0}
+
+.hint{
+  max-width:1160px;margin:14px auto 0;padding:11px 18px;
+  background:rgba(47,107,255,.09);border:1px solid rgba(47,107,255,.28);
+  border-radius:9px;font-size:13px;color:#a9b6d4;
+}
+.hint b{color:#cfd9ee}
+
+.pages{max-width:1160px;margin:18px auto 70px;padding:0 16px}
+.pg{margin-bottom:20px;position:relative}
+.pg img{
+  width:100%;height:auto;display:block;
+  border-radius:9px;border:1px solid rgba(255,255,255,.1);
+  background:#171a21;
+  box-shadow:0 8px 30px rgba(0,0,0,.42);
+}
+.pg .no{
+  position:absolute;top:9px;right:11px;z-index:2;
+  font-size:11px;letter-spacing:.4px;
+  padding:3px 9px;border-radius:20px;
+  background:rgba(0,0,0,.6);color:#c6cede;
+  backdrop-filter:blur(4px);opacity:0;transition:opacity .25s;
+}
+.pg:hover .no{opacity:1}
+.skel{width:100%;aspect-ratio:16/9;border-radius:9px;background:#171a21;border:1px solid rgba(255,255,255,.07)}
+
+.bottom{
+  max-width:1160px;margin:0 auto 60px;padding:22px;text-align:center;
+  border-top:1px solid rgba(255,255,255,.09);
+}
+.bottom a{
+  display:inline-block;padding:12px 30px;border-radius:999px;
+  background:#2f6bff;color:#fff;text-decoration:none;font-weight:700;font-size:15px;
+  transition:.2s;
+}
+.bottom a:hover{background:#1f57e0;transform:translateY(-2px)}
+.bottom p{margin-top:12px;color:#8b93a7;font-size:12.5px}
+
+@media (max-width:640px){
+  .bar{padding:10px 12px;gap:8px}
+  .bar h1{font-size:14px;width:100%}
+  .bar h1 em{display:block;margin:2px 0 0}
+  .bar a,.bar button{padding:7px 12px;font-size:12.5px}
+  .pages{padding:0 10px;margin-top:12px}
+  .pg{margin-bottom:12px}
+}
+@media print{
+  .bar,.hint,.bottom,.pg .no{display:none}
+  body{background:#fff}
+  .pages{max-width:none;margin:0;padding:0}
+  .pg{margin:0;page-break-after:always;break-after:page}
+  .pg img{border:none;border-radius:0;box-shadow:none}
+  .skel{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <h1>徐昊 · 作品集<em>42 页 · 品牌 / 海报 / 标志 / UI / 键帽 / 其他</em></h1>
+  <span class="sp"></span>
+  <a href="index.html">← 返回网站首页</a>
+  <a class="primary" id="dl" href="assets/xuhao-portfolio.pdf" download="徐昊-作品集-42页.pdf">
+    ⬇ 下载 PDF（1.7 MB）
+  </a>
+  <button onclick="window.print()">🖨 打印 / 存 PDF</button>
+</div>
+
+<div class="hint">
+  <b>直接往下滑即可查看全部 42 页</b>，无需下载。想保存到本地可点右上角「下载 PDF」；
+  若下载慢，点「打印 / 存 PDF」用浏览器自带功能另存为 PDF 也完全一样。
+</div>
+
+<div class="pages" id="pages"></div>
+
+<div class="bottom">
+  <a href="assets/xuhao-portfolio.pdf" download="徐昊-作品集-42页.pdf">⬇ 下载完整作品集 PDF（1.7 MB）</a>
+  <p>徐昊 · 数字媒体技术 · 177 6313 5843 · 2327149251@qq.com</p>
+</div>
+
+<script>
+/* 42 页顺序 */
+const PAGES = [
+  { f: 'cover',   n: '封面' },
+  { f: 'detail',  n: '作品简介' },
+  { f: 'contents', n: '目录' },
+  ...Array.from({length:6}, (_,i) => ({ f: 'brand-'  + String(i+1).padStart(2,'0'), n: '品牌设计' })),
+  ...Array.from({length:6}, (_,i) => ({ f: 'poster-' + String(i+1).padStart(2,'0'), n: '海报设计' })),
+  ...Array.from({length:7}, (_,i) => ({ f: 'logo-'   + String(i+1).padStart(2,'0'), n: '标志设计' })),
+  ...Array.from({length:7}, (_,i) => ({ f: 'ui-'     + String(i+1).padStart(2,'0'), n: 'UI 设计' })),
+  ...Array.from({length:7}, (_,i) => ({ f: 'keycap-' + String(i+1).padStart(2,'0'), n: '键帽设计' })),
+  ...Array.from({length:5}, (_,i) => ({ f: 'other-'  + String(i+1).padStart(2,'0'), n: '其他设计' })),
+  { f: 'backcover', n: '封底' }
+];
+
+const box = document.getElementById('pages');
+PAGES.forEach((pg, i) => {
+  const d = document.createElement('div');
+  d.className = 'pg';
+
+  const skel = document.createElement('div');
+  skel.className = 'skel';
+
+  const no = document.createElement('span');
+  no.className = 'no';
+  no.textContent = (i + 1) + ' / ' + PAGES.length + ' · ' + pg.n;
+
+  const img = document.createElement('img');
+  img.src = 'images/' + pg.f + '.webp';
+  img.alt = '徐昊作品集 第 ' + (i + 1) + ' 页 · ' + pg.n;
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  img.addEventListener('load', function () { skel.remove(); });
+  img.addEventListener('error', function () {
+    skel.className = 'skel';
+    skel.textContent = '第 ' + (i + 1) + ' 页加载失败，请刷新';
+    skel.style.cssText =
+      'display:flex;align-items:center;justify-content:center;color:#8b93a7;font-size:13px';
+  });
+
+  d.appendChild(skel);
+  d.appendChild(no);
+  d.appendChild(img);
+  box.appendChild(d);
+});
+</script>
+</body>
+</html>

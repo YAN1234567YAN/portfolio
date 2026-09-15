@@ -378,38 +378,59 @@ img { max-width: 100%; display: block; }
 }
 .filter-btn.active em { opacity: .8; }
 
-/* 下载作品集 PDF 按钮 */
-.btn-pdf {
+/* 作品集操作按钮组 */
+.pdf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+.btn-view, .btn-dl {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 22px;
-  padding: 13px 26px;
+  gap: 9px;
+  padding: 12px 24px;
   border-radius: 999px;
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 700;
-  color: var(--text);
-  background: rgba(124, 92, 255, .1);
-  border: 1px solid rgba(124, 92, 255, .45);
+  text-decoration: none;
   transition: transform .25s, background .25s, border-color .25s, box-shadow .25s;
 }
-.btn-pdf:hover {
-  transform: translateY(-3px);
+.btn-view {
   background: var(--gradient);
+  background-size: 200% 100%;
   color: #0b0b12;
-  border-color: transparent;
-  box-shadow: 0 10px 32px rgba(124, 92, 255, .35);
+  border: 1px solid transparent;
+  box-shadow: 0 8px 26px rgba(124, 92, 255, .32);
 }
-.btn-pdf .pdf-ico { font-size: 16px; }
-.btn-pdf em {
+.btn-view:hover {
+  transform: translateY(-3px);
+  background-position: 100% 0;
+}
+.btn-dl {
+  color: var(--text);
+  background: rgba(255, 255, 255, .045);
+  border: 1px solid var(--card-border);
+}
+.btn-dl:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+}
+.btn-view em, .btn-dl em {
   font-style: normal;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 400;
-  opacity: .7;
-  padding-left: 4px;
+  opacity: .72;
+  padding-left: 10px;
+  margin-left: 1px;
   border-left: 1px solid currentColor;
-  margin-left: 2px;
-  padding-left: 12px;
+}
+.pdf-note {
+  margin-top: 13px;
+  font-size: 12.5px;
+  color: var(--text-dim);
+  opacity: .85;
 }
 .works-grid {
   display: grid;
