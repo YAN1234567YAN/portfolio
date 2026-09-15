@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="徐昊 · 数字媒体技术专业求职简历作品集 - UI设计 / 前端开发 / AI应用 / 创新创业" />
+  <meta name="description" content="徐昊 · 数字媒体技术专业作品集 - 品牌设计 / 海报设计 / 标志设计 / UI设计 / 键帽设计，共 38 件作品" />
   <title>徐昊 · 数字媒体技术 · 个人作品集</title>
+
+  <!-- 社交分享预览 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="徐昊 · 数字媒体技术 · 个人作品集" />
+  <meta property="og:description" content="38 件设计作品 · 品牌设计 / 海报设计 / 标志设计 / UI设计 / 键帽设计" />
+  <meta property="og:image" content="https://yan1234567yan.github.io/portfolio/images/cover.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
   <!-- 引入字体与样式 -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
@@ -180,76 +187,28 @@
       <div class="section-head reveal">
         <span class="section-index">03</span>
         <h2 class="section-title">作品 <em>Works</em></h2>
-        <p class="section-desc">精选项目 · 点击卡片可查看说明</p>
+        <p class="section-desc">38 件设计作品 · 点击任意图片查看大图，支持 ← → 键切换</p>
+        <a class="btn-pdf reveal" href="assets/xuhao-portfolio.pdf"
+           download="徐昊-作品集-42页.pdf" target="_blank" rel="noopener">
+          <span class="pdf-ico">⬇</span>
+          下载完整作品集 PDF
+          <em>42 页 · 4.5 MB</em>
+        </a>
       </div>
 
       <!-- 分类筛选 -->
       <div class="filter-bar reveal" id="filterBar">
-        <button class="filter-btn active" data-filter="all">全部</button>
-        <button class="filter-btn" data-filter="product">产品平台</button>
-        <button class="filter-btn" data-filter="ai">AI 应用</button>
-        <button class="filter-btn" data-filter="ui">UI 设计</button>
-        <button class="filter-btn" data-filter="startup">创新创业</button>
+        <button class="filter-btn active" data-filter="all">全部 <em>38</em></button>
+        <button class="filter-btn" data-filter="brand">品牌设计 <em>6</em></button>
+        <button class="filter-btn" data-filter="poster">海报设计 <em>6</em></button>
+        <button class="filter-btn" data-filter="logo">标志设计 <em>7</em></button>
+        <button class="filter-btn" data-filter="ui">UI 设计 <em>7</em></button>
+        <button class="filter-btn" data-filter="keycap">键帽设计 <em>7</em></button>
+        <button class="filter-btn" data-filter="other">其他设计 <em>5</em></button>
       </div>
 
-      <div class="works-grid" id="worksGrid">
-
-        <!-- 项目卡片：后续由 js 或直接在此编辑 -->
-        <article class="work-card reveal" data-category="product">
-          <div class="work-thumb p-1"><span class="work-thumb-label">PRODUCT</span></div>
-          <div class="work-body">
-            <h3>校园表白墙平台</h3>
-            <p>整合校园资源，与食堂、超市、社团等合作实现商业化运营；用户覆盖率 100%，月活超 20W。</p>
-            <div class="work-meta"><span>产品策划 · 运营 · 商业化</span><span>2024</span></div>
-          </div>
-        </article>
-
-        <article class="work-card reveal" data-category="ai">
-          <div class="work-thumb p-2"><span class="work-thumb-label">AI</span></div>
-          <div class="work-body">
-            <h3>AI 求职平台</h3>
-            <p>基于大数据与区块链技术，实现企业需求与求职者画像智能匹配，保障数据不可篡改，校内测试满意度 73.2%。</p>
-            <div class="work-meta"><span>Python · 区块链 · 大数据</span><span>2024</span></div>
-          </div>
-        </article>
-
-        <article class="work-card reveal" data-category="ui">
-          <div class="work-thumb p-3"><span class="work-thumb-label">UI</span></div>
-          <div class="work-body">
-            <h3>北大青鸟 UI 设计实训</h3>
-            <p>系统进行 UI 设计实训，从需求分析、界面原型到视觉规范的完整设计流程实践。</p>
-            <div class="work-meta"><span>UI设计 · 视觉规范</span><span>2024 - 至今</span></div>
-          </div>
-        </article>
-
-        <article class="work-card reveal" data-category="product">
-          <div class="work-thumb p-4"><span class="work-thumb-label">PLATFORM</span></div>
-          <div class="work-body">
-            <h3>新学生交流平台</h3>
-            <p>担任平台负责人，搭建校园新生交流社区，统筹内容与运营，服务全校师生。</p>
-            <div class="work-meta"><span>平台运营 · 团队管理</span><span>2023</span></div>
-          </div>
-        </article>
-
-        <article class="work-card reveal" data-category="startup">
-          <div class="work-thumb p-5"><span class="work-thumb-label">AWARD</span></div>
-          <div class="work-body">
-            <h3>省市级创新创业大赛</h3>
-            <p>作为团队负责人带队参赛，校创新创业获奖、省赛市赛入围、省决赛入围，验证项目商业价值。</p>
-            <div class="work-meta"><span>创新创业 · 团队负责</span><span>2023 - 2024</span></div>
-          </div>
-        </article>
-
-        <article class="work-card reveal" data-category="startup">
-          <div class="work-thumb p-6"><span class="work-thumb-label">SPEECH</span></div>
-          <div class="work-body">
-            <h3>北大青鸟全国演讲赛</h3>
-            <p>作为负责人参加北大青鸟全国演讲比赛，荣获二等奖，展现表达与统筹能力。</p>
-            <div class="work-meta"><span>演讲表达 · 统筹组织</span><span>2023</span></div>
-          </div>
-        </article>
-
-      </div>
+      <!-- 作品图片网格：由 js/main.js 渲染 -->
+      <div class="works-grid" id="worksGrid"></div>
     </div>
   </section>
 
@@ -415,6 +374,21 @@
       <p>Designed &amp; Built with ❤️</p>
     </div>
   </footer>
+
+  <!-- ======================= 作品大图灯箱 ======================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="关闭">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="上一张">‹</button>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="下一张">›</button>
+    <div class="lb-stage" id="lbStage">
+      <img id="lbImg" src="" alt="" />
+    </div>
+    <div class="lb-bar">
+      <span class="lb-cat" id="lbCat"></span>
+      <span class="lb-count" id="lbCount"></span>
+    </div>
+    <div class="lb-thumbs" id="lbThumbs"></div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
