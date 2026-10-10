@@ -1,0 +1,32 @@
+.progressive-image {
+  background: var(--panel);
+}
+.lightbox-body {
+  position: relative;
+}
+.lightbox-status {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  z-index: 1;
+  transform: translateX(-50%);
+  max-width: calc(100% - 32px);
+  padding: 7px 13px;
+  border: 1px solid #55584d;
+  border-radius: 30px;
+  background: #191a17e8;
+  color: #e2e4d9;
+  font-size: 11px;
+  text-align: center;
+  white-space: nowrap;
+}
+.lightbox-status a {
+  margin-left: 9px;
+  color: var(--lime);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.lightbox-status[hidden] { display: none; }
+@media (max-width: 600px) {
+  .lightbox-status { bottom: 12px; font-size: 10px; }
+}

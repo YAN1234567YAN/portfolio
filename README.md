@@ -15,7 +15,11 @@
 
 ## 修改与维护
 
-个人项目和设计标题在 content.js，报告在 reports.js，页面在各 HTML 文件，样式在 site.css，交互在 site.js。图片、字体与 Lucide 图标均在本地，无运行时 CDN 依赖。作品图版保留完整原图，首页的部分预览按展示比例裁切。
+个人项目和设计标题在 content.js，报告在 reports.js，页面在各 HTML 文件。基础样式在 site.css，视觉细节在 polish.css，交互在 site.js。图片、字体与精简 Lucide 图标均在本地，无运行时 CDN 依赖。作品图版保留完整原图，首页的部分预览按展示比例裁切。
+
+media.js 与 assets/media-manifest.js 提供内嵌预览和不同尺寸的 WebP。作品先显示预览，再按屏幕宽度加载清晰图片；画廊大图沿用已显示的预览，并在可用网络下预加载相邻作品。sw.js 缓存已访问页面和图片，首次高清图仍需要网络下载。双击打开时预览功能可用；通过 HTTPS 或 localhost 访问时才启用持久缓存。
+
+新增作品或修改文案后，可安装 Pillow、fonttools 和 brotli，运行 `python scripts/optimize-media.py` 更新媒体与字体；只修改文案时运行 `python scripts/optimize-media.py --fonts-only`。此脚本仅用于维护，网页运行和部署不需要 Python。修改已缓存的 CSS、JS 或图片后，同时更新 sw.js 的 CACHE 版本名称。
 
 ## 材料说明
 
@@ -25,4 +29,4 @@
 
 ## 发布
 
-可部署到 GitHub Pages 等静态托管，使用相对路径兼容 /portfolio/ 子目录。原网站仓库地址为 https://github.com/YAN1234567YAN/portfolio，本次文件准备完成并不表示已推送到公网。发布后的页面地址为 https://yan1234567yan.github.io/portfolio/。
+使用 GitHub Pages 静态托管，相对路径兼容 /portfolio/ 子目录。仓库地址为 https://github.com/YAN1234567YAN/portfolio，页面地址为 https://yan1234567yan.github.io/portfolio/。更新 main 分支后由 GitHub Pages 发布。

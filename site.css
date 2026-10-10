@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Noto Local";
-  src: url("assets/fonts/noto-400.woff2") format("woff2");
+  src: url("assets/fonts/noto-subset-400.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Noto Local";
-  src: url("assets/fonts/noto-700.woff2") format("woff2");
+  src: url("assets/fonts/noto-subset-700.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
