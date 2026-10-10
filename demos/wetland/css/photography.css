@@ -1,0 +1,18 @@
+/* 真实摄影：保留自然色彩，详情中展示完整构图。 */
+.animal-photo{aspect-ratio:3/2;overflow:hidden;background:#e5e8e0;margin:0 0 14px}
+.animal-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.animal-card:hover .animal-photo img{transform:scale(1.035)}
+.animal-card[data-i="3"] .animal-photo img{object-position:50% 25%}
+.animal-card[data-i="6"] .animal-photo img{object-position:50% 62%}
+.animal-card[data-i="7"] .animal-photo img{object-position:50% 22%}
+.animal-portrait{margin:0 0 18px}
+.animal-portrait img{display:block;width:100%;height:auto;max-height:44dvh;object-fit:contain;background:#eceee8;border-radius:10px}
+.animal-portrait figcaption{padding:7px 1px 0;text-align:right}
+.photo-credit{display:inline-block;color:#7b8375;font-size:9px;line-height:1.7;text-decoration:none;text-underline-offset:3px}
+.photo-credit:hover{text-decoration:underline;color:#3c5943}
+.site-photo{margin:0 -15px 18px;position:relative;background:#e6e9df;border-radius:13px 13px 0 0;overflow:hidden}
+.site-photo img{display:block;width:100%;height:auto;min-height:180px;object-fit:cover}
+.site-photo figcaption{padding:10px 15px;border-bottom:1px solid #e8e9e1;background:#f8f9f3;color:#6b7866;font-size:10px;letter-spacing:.02em}
+.map-info{padding-top:0;overflow:hidden}
+.map-info>.photo-credit{margin-top:15px}
+@media(prefers-reduced-motion:reduce){.animal-photo img{transition:none}}

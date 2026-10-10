@@ -1,403 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="徐昊 · 数字媒体技术专业作品集 - 品牌设计 / 海报设计 / 标志设计 / UI设计 / 键帽设计，共 38 件作品" />
-  <title>徐昊 · 数字媒体技术 · 个人作品集</title>
-
-  <!-- 社交分享预览 -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="徐昊 · 数字媒体技术 · 个人作品集" />
-  <meta property="og:description" content="38 件设计作品 · 品牌设计 / 海报设计 / 标志设计 / UI设计 / 键帽设计" />
-  <meta property="og:image" content="https://yan1234567yan.github.io/portfolio/images/cover.webp" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- 引入字体与样式 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>徐昊 XU HAO · 设计、开发与数字创作</title>
+  <meta name="description" content="徐昊的个人作品网站。品牌与 UI 设计、毕业设计、AI 工作台、软件项目与视频创作。">
+  <meta property="og:title" content="徐昊 · 设计、开发与数字创作"><meta property="og:description" content="从视觉到交互，从创意到可运行的项目。"><meta property="og:image" content="https://yan1234567yan.github.io/portfolio/assets/projects/keycap-preview.webp">
+  <meta name="theme-color" content="#191a17"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="site.css">
+  <script src="assets/vendor/lucide.js" defer></script><script src="content.js" defer></script><script src="site.js" defer></script>
 </head>
-<body>
-
-  <!-- ======================= 导航栏 ======================= -->
-  <header class="nav" id="nav">
-    <div class="container nav-inner">
-      <a href="#home" class="logo">XU<span class="logo-dot">.</span></a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#home" class="nav-link active">首页</a>
-        <a href="#about" class="nav-link">关于</a>
-        <a href="#skills" class="nav-link">技能</a>
-        <a href="#works" class="nav-link">作品</a>
-        <a href="#honors" class="nav-link">荣誉</a>
-        <a href="#timeline" class="nav-link">经历</a>
-        <a href="#contact" class="nav-link">联系</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="菜单">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- ======================= 主视觉区 Hero ======================= -->
-  <section class="hero" id="home">
-    <!-- 动态背景光斑 -->
-    <div class="hero-bg" aria-hidden="true">
-      <span class="blob blob-1"></span>
-      <span class="blob blob-2"></span>
-      <span class="blob blob-3"></span>
-    </div>
-    <div class="container hero-inner">
-      <p class="hero-tag reveal">数字媒体技术 · UI设计 · AI应用 · 创新创业</p>
-      <h1 class="hero-title reveal">
-        你好，我是<span class="gradient-text" id="typeName">徐昊</span><br />
-        用技术与创意构建数字体验
-      </h1>
-      <p class="hero-sub reveal">
-        数字媒体技术专业在读，担任班长四年，擅长 UI 设计、前端开发与 AI 应用。
-        曾打造月活 20W+ 的校园平台，带队闯入省级创新创业决赛，
-        相信好的产品源于「懂用户」与「敢创新」。
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#works" class="btn btn-primary">查看作品集</a>
-        <a href="#contact" class="btn btn-ghost">与我联系</a>
+<body data-page="home">
+  <a class="skip-link" href="#main">跳到内容</a><header id="site-header"></header>
+  <main id="main">
+    <section class="intro wrap" aria-labelledby="name">
+      <div class="intro-top"><p class="eyebrow"><span class="status-dot"></span>设计与数字产品创作者</p><span class="small-label">YANCHENG, CN / 2026</span></div>
+      <div class="identity"><h1 id="name">徐昊<span>XU HAO</span></h1><div class="intro-copy"><p>设计有想法。<br>创意能落地。</p><span>视觉设计 / 软件开发 / AI 应用 / 视频创作</span></div></div>
+      <div class="intro-bottom"><p>把视觉、代码和内容，做成可感知的作品。</p><a href="#work" class="text-link">进入作品 <i data-lucide="arrow-down-right"></i></a></div>
+    </section>
+    <section class="showcase" aria-label="键帽设计作品展示">
+      <img src="assets/hero-keyboard.webp" alt="北极熊和企鹅主题键帽、包装与周边实物设计" fetchpriority="high">
+      <div class="showcase-label"><span>OBJECT / GRAPHIC / REAL LIFE</span><a href="project.html?id=keycaps">从图形到实物<i data-lucide="arrow-up-right"></i></a></div>
+      <a class="showcase-stamp" href="gallery.html">设计<br>与实践<i data-lucide="asterisk"></i></a>
+    </section>
+    <section class="work-section wrap" id="work">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>精选作品<span class="accent-period">.</span></h2></div><a href="gallery.html" class="text-link">全部设计图版<i data-lucide="arrow-up-right"></i></a></div>
+      <div class="work-toolbar"><div class="segmented" aria-label="项目类别"><button class="active" data-project-filter="all" aria-pressed="true">全部 <span>06</span></button><button data-project-filter="design" aria-pressed="false">设计作品</button><button data-project-filter="development" aria-pressed="false">数字项目</button></div><span class="toolbar-note">IDEA → DESIGN → BUILD</span></div>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+    <section class="capability-band" id="practice"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">02 / PRACTICE</p><h2>不止一种表达。</h2></div><p class="section-aside">从一张图，到一个可运行的系统。</p></div>
+      <div class="capability-list">
+        <a href="gallery.html?category=brand"><span class="row-index">01</span><h3>视觉与品牌</h3><p>品牌系统、海报、标志、UI、键帽与文创</p><i data-lucide="arrow-up-right"></i></a>
+        <a href="project.html?id=wetland"><span class="row-index">02</span><h3>交互与开发</h3><p>应用结构、前端交互、Canvas 与本地数据</p><i data-lucide="arrow-up-right"></i></a>
+        <a href="project.html?id=contentflow"><span class="row-index">03</span><h3>AI 与工作流</h3><p>需求分析、业务编排、工具连接与人工审核</p><i data-lucide="arrow-up-right"></i></a>
+        <a href="video.html"><span class="row-index">04</span><h3>内容与影像</h3><p>选题、脚本、拍摄、剪辑与账号运营</p><i data-lucide="arrow-up-right"></i></a>
       </div>
-      <div class="hero-meta reveal">
-        <div class="meta-item"><strong>20W+</strong><span>平台月活用户</span></div>
-        <div class="meta-item"><strong>10+</strong><span>荣誉奖项</span></div>
-        <div class="meta-item"><strong>4年</strong><span>班长管理经验</span></div>
-      </div>
-    </div>
-    <a href="#about" class="scroll-hint" aria-label="向下滚动">
-      <span></span>
-    </a>
-  </section>
-
-  <!-- ======================= 关于我 ======================= -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="section-index">01</span>
-        <h2 class="section-title">关于我 <em>About</em></h2>
-        <p class="section-desc">江苏联合职业技术学院 · 数字媒体技术（五年一贯制）</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>
-            我是徐昊，江苏盐城人，就读于盐城机电高等职业技术学校（江苏联合职业技术学院）
-            数字媒体技术专业。担任班长四年，专业能力突出，连续获得校级荣誉，
-            擅长团队管理与项目统筹。
-          </p>
-          <p>
-            我具备从 0 到 1 的产品搭建与商业化经验：成功打造校园表白墙平台并实现商业价值；
-            开发基于大数据与区块链的 AI 求职平台，实现企业需求与求职者画像的智能匹配。
-            掌握 Python、C++、前端开发等技能，熟悉区块链应用，热爱学习与挑战。
-          </p>
-          <ul class="about-list">
-            <li>📍 坐标：江苏 · 盐城</li>
-            <li>🎓 专业：数字媒体技术（专科 · 2027 毕业）</li>
-            <li>✉️ 邮箱：2327149251@qq.com</li>
-            <li>💼 求职意向：UI设计 / 前端开发 / 产品运营方向</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary">和我聊聊</a>
-        </div>
-        <div class="about-card reveal">
-          <div class="avatar-wrap">
-            <div class="avatar">
-              <span class="avatar-initial">昊</span>
-            </div>
-          </div>
-          <div class="about-card-info">
-            <h3>徐昊</h3>
-            <p>Digital Media Student</p>
-            <div class="tags">
-              <span>UI设计</span><span>前端开发</span><span>Python</span>
-              <span>AI应用</span><span>区块链</span><span>项目管理</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= 技能 ======================= -->
-  <section class="section skills" id="skills">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="section-index">02</span>
-        <h2 class="section-title">技能 <em>Skills</em></h2>
-        <p class="section-desc">我掌握的核心创作工具与方向</p>
-      </div>
-      <div class="skills-grid">
-
-        <article class="skill-card reveal">
-          <div class="skill-icon">🖱️</div>
-          <h3>UI 设计</h3>
-          <p>北大青鸟 UI 设计实训，掌握界面设计规范与视觉表达，关注用户体验。</p>
-          <div class="skill-bar"><i style="--p:85%"></i></div>
-          <span class="skill-level">85%</span>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon">💻</div>
-          <h3>前端开发</h3>
-          <p>HTML / CSS / JavaScript，具备前端开发基础结业认证，能独立搭建网页项目。</p>
-          <div class="skill-bar"><i style="--p:78%"></i></div>
-          <span class="skill-level">78%</span>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon">🐍</div>
-          <h3>Python / C++</h3>
-          <p>Python 开发基础认证，掌握数据分析与自动化处理；熟悉 C++ 程序设计。</p>
-          <div class="skill-bar"><i style="--p:80%"></i></div>
-          <span class="skill-level">80%</span>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon">🤖</div>
-          <h3>AI 应用</h3>
-          <p>基于大数据与区块链技术开发 AI 求职平台，实现需求与画像智能匹配。</p>
-          <div class="skill-bar"><i style="--p:75%"></i></div>
-          <span class="skill-level">75%</span>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon">🗄️</div>
-          <h3>数据库 / 云服务</h3>
-          <p>MySQL 数据库基础结业认证，云服务 ECS 入门认证，具备数据存储与部署能力。</p>
-          <div class="skill-bar"><i style="--p:72%"></i></div>
-          <span class="skill-level">72%</span>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon">🚀</div>
-          <h3>项目管理 / 统筹</h3>
-          <p>担任班长四年，带领团队获省、市级创新创业奖项，具备从 0 到 1 的商业化经验。</p>
-          <div class="skill-bar"><i style="--p:90%"></i></div>
-          <span class="skill-level">90%</span>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= 作品集 ======================= -->
-  <section class="section works" id="works">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="section-index">03</span>
-        <h2 class="section-title">作品 <em>Works</em></h2>
-        <p class="section-desc">38 件设计作品 · 点击任意图片查看大图，支持 ← → 键切换</p>
-        <div class="pdf-actions reveal">
-          <a class="btn-view" href="view.html">
-            <span>▤</span> 在线查看完整作品集
-            <em>42 页 · 免下载</em>
-          </a>
-          <a class="btn-dl" target="_blank" rel="noopener"
-             href="https://cdn.jsdelivr.net/gh/YAN1234567YAN/portfolio@v2/assets/xuhao-portfolio.pdf">
-            <span>⬇</span> 下载 PDF
-            <em>1.7 MB</em>
-          </a>
-        </div>
-        <p class="pdf-note reveal">
-          下载较慢？点「在线查看」直接浏览全部 42 页，或用浏览器「打印 → 另存为 PDF」保存。
-        </p>
-      </div>
-
-      <!-- 分类筛选 -->
-      <div class="filter-bar reveal" id="filterBar">
-        <button class="filter-btn active" data-filter="all">全部 <em>38</em></button>
-        <button class="filter-btn" data-filter="brand">品牌设计 <em>6</em></button>
-        <button class="filter-btn" data-filter="poster">海报设计 <em>6</em></button>
-        <button class="filter-btn" data-filter="logo">标志设计 <em>7</em></button>
-        <button class="filter-btn" data-filter="ui">UI 设计 <em>7</em></button>
-        <button class="filter-btn" data-filter="keycap">键帽设计 <em>7</em></button>
-        <button class="filter-btn" data-filter="other">其他设计 <em>5</em></button>
-      </div>
-
-      <!-- 作品图片网格：由 js/main.js 渲染 -->
-      <div class="works-grid" id="worksGrid"></div>
-    </div>
-  </section>
-
-  <!-- ======================= 荣誉奖项 ======================= -->
-  <section class="section honors" id="honors">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="section-index">04</span>
-        <h2 class="section-title">荣誉 <em>Honors</em></h2>
-        <p class="section-desc">荣誉证书 · 竞赛奖项 · 技能认证</p>
-      </div>
-      <div class="honors-grid">
-
-        <div class="honor-group reveal">
-          <div class="honor-group-head">
-            <span class="honor-icon">🏅</span>
-            <h3>荣誉证书</h3>
-            <span class="honor-count">4 项</span>
-          </div>
-          <ul class="honor-list">
-            <li>联院三好学生</li>
-            <li>优秀班干部</li>
-            <li>优秀团干</li>
-            <li>优秀团员</li>
-          </ul>
-        </div>
-
-        <div class="honor-group reveal">
-          <div class="honor-group-head">
-            <span class="honor-icon">🏆</span>
-            <h3>竞赛奖项</h3>
-            <span class="honor-count">5 项</span>
-          </div>
-          <ul class="honor-list">
-            <li>省市级创新创业大赛 · 省决赛入围<span class="honor-sub">团队负责人</span></li>
-            <li>江苏省职业学校龙舟赛 · 团体三等奖</li>
-            <li>北大青鸟全国演讲赛 · 二等奖</li>
-            <li>盐城市大学生田径锦标赛 800米 · 前八名</li>
-            <li>2025 盐城半程马拉松 · 前 200 名</li>
-          </ul>
-        </div>
-
-        <div class="honor-group reveal">
-          <div class="honor-group-head">
-            <span class="honor-icon">📜</span>
-            <h3>技能认证</h3>
-            <span class="honor-count">5 项</span>
-          </div>
-          <ul class="honor-list">
-            <li>云服务 ECS 入门认证</li>
-            <li>Python 开发基础 · 结业认证</li>
-            <li>前端开发基础 · 结业认证</li>
-            <li>MySQL 数据库基础 · 结业认证</li>
-            <li>计算机一级 · MS Office</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= 经历 / 教育 ======================= -->
-  <section class="section timeline" id="timeline">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="section-index">05</span>
-        <h2 class="section-title">经历 <em>Timeline</em></h2>
-        <p class="section-desc">学习与实践的成长轨迹</p>
-      </div>
-      <div class="timeline-list">
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="timeline-date">2025.6 - 2025.8</span>
-            <h3>京东 / 盐城大有境 · 实习实践</h3>
-            <p>担任地推销售与商场一楼内部大类监督负责人，锻炼一线业务能力与现场统筹管理。</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="timeline-date">2024 - 至今</span>
-            <h3>北大青鸟 UI 设计实训 · 产品开发</h3>
-            <p>系统学习 UI 设计；开发校园表白墙平台（月活 20W+）与 AI 求职平台（满意度 73.2%）。</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="timeline-date">2023.11</span>
-            <h3>新学生交流平台 · 负责人</h3>
-            <p>担任平台负责人，搭建校园新生交流社区，统筹内容与运营，服务全校师生。</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="timeline-date">2023.4</span>
-            <h3>北大青鸟全国演讲赛 · 二等奖</h3>
-            <p>作为负责人参赛荣获二等奖，展现演讲表达与团队组织能力。</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="timeline-date">2022 - 至今</span>
-            <h3>数字媒体技术 · 五年一贯制在读</h3>
-            <p>就读于盐城机电高等职业技术学校（江苏联合职业技术学院），担任班长四年，多次获校级荣誉。</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= 联系我 ======================= -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="section-index">06</span>
-        <h2 class="section-title">联系我 <em>Contact</em></h2>
-        <p class="section-desc">有合作意向或想聊聊创作？欢迎随时找我</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <h3>期待与你合作</h3>
-          <p>无论是 UI 设计、前端开发还是产品运营，我都乐于倾听你的想法，一起把创意变成现实。欢迎企业实习、项目合作与交流。</p>
-          <ul class="contact-list">
-            <li>📧 2327149251@qq.com</li>
-            <li>📱 17763135843</li>
-            <li>📍 江苏省盐城市</li>
-          </ul>
-          <div class="social">
-            <a href="https://github.com" target="_blank" aria-label="GitHub" class="social-btn">GH</a>
-            <a href="https://mail.qq.com" target="_blank" aria-label="QQ邮箱" class="social-btn">QQ</a>
-            <a href="https://www.qq.com" target="_blank" aria-label="QQ" class="social-btn">Q</a>
-            <a href="https://weixin.qq.com" target="_blank" aria-label="微信" class="social-btn">微</a>
-          </div>
-        </div>
-        <form class="contact-form reveal" id="contactForm">
-          <div class="form-row">
-            <input type="text" name="name" placeholder="你的称呼" required />
-            <input type="email" name="email" placeholder="你的邮箱" required />
-          </div>
-          <input type="text" name="subject" placeholder="合作主题" />
-          <textarea name="message" rows="5" placeholder="简单描述你的需求…" required></textarea>
-          <button type="submit" class="btn btn-primary">发送消息</button>
-          <p class="form-tip">* 当前为演示表单，提交后将打开你的邮件客户端发送</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= 页脚 ======================= -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> 徐昊 · 数字媒体技术 · 用技术与创意构建数字体验</p>
-      <p>Designed &amp; Built with ❤️</p>
-    </div>
-  </footer>
-
-  <!-- ======================= 作品大图灯箱 ======================= -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
-    <button class="lb-close" id="lbClose" aria-label="关闭">✕</button>
-    <button class="lb-nav lb-prev" id="lbPrev" aria-label="上一张">‹</button>
-    <button class="lb-nav lb-next" id="lbNext" aria-label="下一张">›</button>
-    <div class="lb-stage" id="lbStage">
-      <img id="lbImg" src="" alt="" />
-    </div>
-    <div class="lb-bar">
-      <span class="lb-cat" id="lbCat"></span>
-      <span class="lb-count" id="lbCount"></span>
-    </div>
-    <div class="lb-thumbs" id="lbThumbs"></div>
-  </div>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+      <div class="tools-line"><span>创作工具</span><p>Photoshop / Illustrator / Premiere Pro / After Effects / 剪映</p><a href="tools.html">软件项目<i data-lucide="arrow-up-right"></i></a></div>
+    </div></section>
+    <section class="video-strip wrap"><div><p class="eyebrow">03 / MOVING IMAGE</p><h2>另一种创作，<br>发生在时间里。</h2><p class="muted">校园内容、AI 工具与短视频创作</p><a href="video.html" class="button dark">视频作品入口<i data-lucide="play"></i></a></div><a class="video-surface" href="video.html" aria-label="查看徐昊的视频作品"><span class="video-grain" aria-hidden="true"></span><span class="video-word">PLAY<br>IDEAS.</span><span class="play-disc"><i data-lucide="play"></i></span><div class="video-bottom"><span>抖音 / @ycjdxyq</span><i data-lucide="arrow-up-right"></i></div></a></section>
+    <section class="about-section wrap" id="about">
+      <div class="section-heading"><div><p class="eyebrow">04 / ABOUT</p><h2>你好，我是徐昊。</h2></div><a href="assets/documents/xuhao-resume.pdf" target="_blank" rel="noopener" class="text-link">查看简历<i data-lucide="file-text"></i></a></div>
+      <div class="about-grid"><div class="about-statement"><img class="portrait" src="assets/portrait.png" width="180" height="250" alt="徐昊" loading="lazy"><p>喜欢把想法做出来，<br>也愿意把项目做完整。</p><div class="about-location"><i data-lucide="map-pin"></i>江苏 · 盐城<span>2027 届</span></div></div><div class="about-details"><p>数字媒体技术专业在读。我的实践横跨视觉设计、前端交互、AI 工具与内容运营：既关注作品的表达，也关心真实使用中的流程与交付。</p><p>担任班长四年，参与团队统筹与项目推进；从校园平台运营到品牌设计，再到数字应用和本地软件，把不同能力连接在实际工作里。</p><dl><div><dt>教育</dt><dd>江苏联合职业技术学院<br>数字媒体技术 · 专科<br><span>2022.09 - 2027.06</span></dd></div><div><dt>实践</dt><dd>北大青鸟 UI 设计实训<br><span>2024 - 2025 · 团队负责人</span></dd></div><div><dt>经历</dt><dd>京东 / 盐城大有境<br><span>2025.06 - 08 · 推广与现场统筹</span></dd></div></dl></div></div>
+      <div class="honors"><p class="eyebrow">RECOGNITION / 荣誉与项目经历</p><div class="honor-row"><span>设计</span><h3>未来设计师 · 浙江省赛区一等奖</h3><p>梅景合院民宿品牌形象设计</p></div><div class="honor-row"><span>创新</span><h3>市级创新创业大赛 · 三等奖</h3><p>AI 求职平台 · 团队负责人 / 省赛入围</p></div><div class="honor-row"><span>表达</span><h3>北大青鸟全国演讲赛 · 二等奖</h3><p>团队负责人</p></div></div>
+    </section>
+    <section class="documents-section" id="documents"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">05 / DOCUMENTS</p><h2>作品之外，有据可查。</h2></div><span class="section-aside">作品集 / 报告 / 项目材料</span></div><div class="document-list">
+      <a href="assets/documents/xuhao-portfolio.pdf" target="_blank" rel="noopener"><i data-lucide="book-open"></i><div><h3>完整设计作品集</h3><p>品牌、海报、标志、UI、键帽与文创</p></div><span>PDF / 42 页</span><i data-lucide="arrow-up-right"></i></a>
+      <a href="assets/documents/xuhao-graduation-report.pdf" target="_blank" rel="noopener"><i data-lucide="file-text"></i><div><h3>鹤鸣盐城 · 毕业设计报告</h3><p>选题、设计过程、技术实现与测试</p></div><span>PDF</span><i data-lucide="arrow-up-right"></i></a>
+      <a href="report.html?id=video"><i data-lucide="chart-no-axes-combined"></i><div><h3>即梦 AI × 可灵 AI</h3><p>视频生成产品竞品分析</p></div><span>在线阅读 / DOCX</span><i data-lucide="arrow-up-right"></i></a>
+      <a href="report.html?id=recruitment"><i data-lucide="search"></i><div><h3>BOSS 直聘 · AI 招聘分析</h3><p>双边效率、产品方案与公平性</p></div><span>在线阅读 / DOCX</span><i data-lucide="arrow-up-right"></i></a>
+      <a href="assets/documents/analysis-enterprise-knowledge.docx" download><i data-lucide="library"></i><div><h3>企业知识 AI 产品对比</h3><p>Glean / Notion / Rovo</p></div><span>DOCX</span><i data-lucide="download"></i></a>
+    </div></div></section>
+    <section class="contact-section" id="contact"><div class="wrap"><p class="eyebrow">LET'S MAKE SOMETHING.</p><h2>让想法，<br>有一个好作品。</h2><div class="contact-bottom"><a class="email-link" href="mailto:2327149251@qq.com">2327149251@qq.com<i data-lucide="arrow-up-right"></i></a><button class="icon-button" data-copy="2327149251@qq.com" aria-label="复制邮箱" title="复制邮箱"><i data-lucide="copy"></i></button><span>设计 / 数字产品 / 创作合作</span></div></div></section>
+  </main><footer id="site-footer"></footer><div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>

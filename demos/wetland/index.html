@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>鹤鸣盐城 · 黄海湿地数字应用</title>
+<link rel="stylesheet" href="lib/fonts/chinese-simplified-400.css">
+<link rel="stylesheet" href="lib/fonts/chinese-simplified-500.css">
+<link rel="stylesheet" href="lib/fonts/chinese-simplified-700.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/nature.css?v=5">
+<link rel="stylesheet" href="css/photography.css?v=5">
+</head>
+<body>
+
+<!-- 桌面端：手机设备外壳 -->
+<div id="stage">
+  <aside class="desktop-note" aria-hidden="true"><span class="edition">YANCHENG · FIELD NOTES</span><h2>在湿地，<br>与万物相遇。</h2><p>一份关于黄海、候鸟与家乡的自然手册。</p><span class="note-bottom">鹤鸣盐城 / 黄海湿地数字应用<br>探索 · 认识 · 守护</span></aside>
+  <div id="device">
+    <div class="device-notch" id="deviceNotch"></div>
+    <div id="screen">
+
+      <!-- 状态栏 -->
+      <div id="statusbar">
+        <span id="sbTime">9:41</span>
+        <div class="sb-right">
+          <svg class="sb-ic" viewBox="0 0 18 12"><path d="M1 4a12 12 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 7a7.5 7.5 0 0 1 10 0" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="10" r="1.5" fill="currentColor"/></svg>
+          <svg class="sb-ic" viewBox="0 0 24 12"><rect x="1" y="1" width="19" height="10" rx="3" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="3" y="3" width="12" height="6" rx="1.5" fill="currentColor"/><rect x="21.5" y="4" width="2" height="4" rx="1" fill="currentColor"/></svg>
+        </div>
+      </div>
+
+      <!-- 视图容器 -->
+      <main id="views">
+
+        <!-- 登录 / 注册 -->
+        <section class="view" id="view-login">
+          <div class="login-anim"></div>
+          <div class="login-brand">
+            <div class="brand-logo">
+              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="none" stroke="#f6a04c" stroke-width="2" opacity=".55"/><path d="M18 38 C 14 30 16 22 24 18" stroke="#fff8e7" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="26" cy="15" r="4" fill="#fff8e7"/><path d="M28 16 L 36 19" stroke="#e76f51" stroke-width="3" stroke-linecap="round"/><path d="M22 34 L 32 42 L 42 34" stroke="#fff8e7" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 44 q 4 -3 8 0 q 4 -3 8 0" stroke="#f6a04c" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M34 44 q 4 -3 8 0 q 4 -3 8 0" stroke="#f6a04c" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+            </div>
+            <h1>鹤鸣盐城</h1>
+            <p>听见自然，遇见盐城</p>
+          </div>
+          <div class="login-card">
+            <div class="login-tabs">
+              <button id="tabLogin" class="on">登 录</button>
+              <button id="tabReg">注 册</button>
+            </div>
+            <div id="fLogin">
+              <label class="field-label" for="loginUser">账号</label>
+              <div class="input-wrap"><i class="fa-solid fa-user"></i><input class="field" id="loginUser" placeholder="请输入用户名" autocomplete="username"></div>
+              <label class="field-label" for="loginPass">密码</label>
+              <div class="input-wrap"><i class="fa-solid fa-lock"></i><input class="field" id="loginPass" type="password" placeholder="请输入密码" autocomplete="current-password"></div>
+              <button class="btn-primary" id="btnLogin"><i class="fa-solid fa-right-to-bracket"></i> 登 录</button>
+              <details class="demo-accounts"><summary>查看演示账号</summary><p>体验：student / 123456<br>管理：admin / admin123</p></details>
+            </div>
+            <div id="fReg" hidden>
+              <label class="field-label" for="regNick">昵称</label>
+              <div class="input-wrap"><i class="fa-solid fa-feather"></i><input class="field" id="regNick" placeholder="给自己起个昵称"></div>
+              <label class="field-label" for="regUser">账号</label>
+              <div class="input-wrap"><i class="fa-solid fa-at"></i><input class="field" id="regUser" placeholder="设置用户名（字母或数字）"></div>
+              <label class="field-label" for="regPass">密码</label>
+              <div class="input-wrap"><i class="fa-solid fa-key"></i><input class="field" id="regPass" type="password" placeholder="设置密码（至少 4 位）"></div>
+              <button class="btn-primary" id="btnReg"><i class="fa-solid fa-user-plus"></i> 注册并登录</button>
+            </div>
+            <p id="loginErr" class="login-err" role="alert" hidden></p>
+            <button class="btn-ghost" id="btnGuest"><i class="fa-solid fa-user-group"></i> 游客体验 · 直接进入</button>
+          </div>
+        </section>
+
+        <!-- 首页（功能页） -->
+        <section class="view" id="view-home"></section>
+
+        <!-- 湿地导览 -->
+        <section class="view" id="view-map">
+          <div class="page-head">
+            <span class="eyebrow">EXPLORE THE WETLAND</span>
+            <h2>湿地导览</h2>
+            <p>沿着海岸线，发现五处自然秘境</p>
+          </div>
+          <div class="map-wrap">
+            <div class="map-canvas" id="mapCanvas"></div>
+            <p class="map-caption">黄海湿地示意图 · 点击标记探索片区</p>
+            <div class="map-info" id="mapInfo"></div>
+          </div>
+        </section>
+
+        <!-- 生灵图鉴 -->
+        <section class="view" id="view-gallery">
+          <div class="page-head">
+            <span class="eyebrow">NATURE FIELD GUIDE</span>
+            <h2>生灵图鉴</h2>
+            <p>每一个生命，都有值得倾听的故事</p>
+          </div>
+          <div class="gallery-tools"><label class="search-box"><i class="fa-solid fa-search"></i><input id="animalSearch" type="search" aria-label="搜索物种" placeholder="搜索你想认识的生灵"></label><div class="filter-tabs" role="group" aria-label="物种分类"><button class="active" data-filter="all" aria-pressed="true">全部</button><button data-filter="bird" aria-pressed="false">鸟类</button><button data-filter="mammal" aria-pressed="false">哺乳类</button></div><p id="galleryCount" class="result-count" aria-live="polite"></p></div>
+          <div class="animal-grid" id="animalGrid"></div>
+        </section>
+
+        <!-- 湿地问答 -->
+        <section class="view" id="view-quiz">
+          <div class="page-head">
+            <span class="eyebrow">A LITTLE CHALLENGE</span>
+            <h2>湿地问答</h2>
+            <p>8 道闯关题，测测你的湿地知识</p>
+          </div>
+          <div id="quizBox"></div>
+        </section>
+
+        <!-- 守护宣言 -->
+        <section class="view" id="view-pledge">
+          <div class="pledge-wrap">
+            <span class="eyebrow">FOR OUR SHARED HOME</span><h2 class="pledge-title">把热爱，留给自然</h2><p class="pledge-intro">从一件小事开始，成为湿地的守护者。</p>
+            <div class="pledge-body" id="pledgeBody"></div>
+            <button class="btn-pledge" id="btnRestart">再看一遍</button>
+            <p class="pledge-sig">江苏联合职业技术学院盐城机电分院<br>数字媒体技术专业 2022 级</p>
+            <div class="view-back"><button class="btn-back" data-home="1">← 返回首页</button></div>
+          </div>
+        </section>
+
+        <!-- 我的 -->
+        <section class="view" id="view-mine"></section>
+
+        <!-- 管理后台 -->
+        <section class="view" id="view-admin"></section>
+
+      </main>
+
+      <!-- 底部导航 -->
+      <nav id="tabbar">
+        <button class="tab active" data-go="home"><i class="fa-solid fa-house"></i><span>首页</span></button>
+        <button class="tab" data-go="map"><i class="fa-solid fa-map-location-dot"></i><span>导览</span></button>
+        <button class="tab" data-go="gallery"><i class="fa-solid fa-dove"></i><span>图鉴</span></button>
+        <button class="tab" data-go="mine"><i class="fa-solid fa-circle-user"></i><span>我的</span></button>
+      </nav>
+
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗 -->
+<div id="modal" class="modal-mask" hidden>
+  <div class="modal-box" id="modalBox" role="dialog" aria-modal="true" aria-label="详情" tabindex="-1"></div>
+</div>
+
+<!-- 提示 -->
+<div id="toast" class="toast" role="status" hidden></div>
+<div id="errTip" class="err-tip" hidden></div>
+
+<script src="js/data.js?v=5"></script>
+<script src="js/photos.js?v=5"></script>
+<script src="js/icons.js?v=5"></script>
+<script src="js/audio.js"></script>
+<script src="js/auth.js?v=5"></script>
+<script src="js/map.js?v=5"></script>
+<script src="js/gallery.js?v=5"></script>
+<script src="js/quiz.js?v=5"></script>
+<script src="js/mine.js?v=5"></script>
+<script src="js/admin.js?v=5"></script>
+<script src="js/main.js?v=5"></script>
+</body>
+</html>
